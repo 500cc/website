@@ -1,16 +1,243 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/skeuos.min.css">
+    <!--
+        Skeuos CSS Library is released under the MIT license.
+        Copyright (c) 2017 Daniel Ruiz de Alegría
+        https://github.com/daniruiz/skeuos-css/blob/master/LICENSE
+    -->
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        p {
+            text-indent: 1em;
+            font-size: medium;
+        }
+
+        .content {
+            margin: auto;
+            padding-bottom: 10em;
+            width: 40em;
+        }
+    </style>
+    <script src="js/lightsout.js"></script>
     <title>500mLのウェブサイト</title>
 </head>
+
 <body>
-    期末試験終わったらつくる
-    <h2>リンク集</h2>
-    <a href="http://dokidokivisual.com">まんがタイムきららWeb</a>
-    <a href="https://twitter.com/jp3lhw">おれのツイッター</a>
-    <a href="https://www.instagram.com/0.500l/">おれの𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢</a>
+    <div class="content">
+        <h2>500mLのウェブサイト</h2>
+        <hr>
+        <h3>Abstract</h3>
+        <p>
+            このウェブサイトは一見500mLに関する情報をまとめたポートフォリオのようなものである。しかし、500mLはこのようなまめな仕事が好きではないので、実際はそのように機能しているわけではなく、自分用のいいドメイン(
+            <a href="https://www.the500.ml/">
+                the500.ml
+            </a>
+            )を取得したことを示す以外の意図を持たない。そのため、ここに記載されている情報は信用に値しない。つまり、このウェブサイトはしばらくしたら飽きて廃墟と化すことが決まっているようなものである。
+        </p>
+        <hr>
+        <h3>自己紹介</h3>
+        <div class="paper">
+            <strong>金・インターネット・まんがタイムきらら</strong>
+            <span style="display: block; text-align: right;">―― 500mL</span>
+        </div>
+        <br>
+        <p>
+            まんがタイムきららのことが好きで、できれば完全に理解したいです。普段はまんがタイムきららに対する理解を深めたり、なんで動かへんねんってキレながらパソコンいじるやつをやったり、全てが面倒になって任天堂のゲーム機を起動するやつをやっています。
+        </p>
+        <hr>
+        <h3>ライツアウト</h3>
+        <center>
+            <div id="game">
+                <label class="checktext">
+                    <input type="checkbox" id="light00" onchange="reverseLights(0, 0);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light01" onchange="reverseLights(0, 1);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light02" onchange="reverseLights(0, 2);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light03" onchange="reverseLights(0, 3);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light04" onchange="reverseLights(0, 4);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light05" onchange="reverseLights(0, 5);">
+                    <span>光</span>
+                </label>
+                <br>
+                <br>
+                <label class="checktext">
+                    <input type="checkbox" id="light10" onchange="reverseLights(1, 0);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light11" onchange="reverseLights(1, 1);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light12" onchange="reverseLights(1, 2);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light13" onchange="reverseLights(1, 3);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light14" onchange="reverseLights(1, 4);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light15" onchange="reverseLights(1, 5);">
+                    <span>光</span>
+                </label>
+                <br>
+                <br>
+                <label class="checktext">
+                    <input type="checkbox" id="light20" onchange="reverseLights(2, 0);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light21" onchange="reverseLights(2, 1);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light22" onchange="reverseLights(2, 2);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light23" onchange="reverseLights(2, 3);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light24" onchange="reverseLights(2, 4);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light25" onchange="reverseLights(2, 5);">
+                    <span>光</span>
+                </label>
+                <br>
+                <br>
+                <label class="checktext">
+                    <input type="checkbox" id="light30" onchange="reverseLights(3, 0);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light31" onchange="reverseLights(3, 1);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light32" onchange="reverseLights(3, 2);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light33" onchange="reverseLights(3, 3);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light34" onchange="reverseLights(3, 4);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light35" onchange="reverseLights(3, 5);">
+                    <span>光</span>
+                </label>
+                <br>
+                <br>
+                <label class="checktext">
+                    <input type="checkbox" id="light40" onchange="reverseLights(4, 0);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light41" onchange="reverseLights(4, 1);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light42" onchange="reverseLights(4, 2);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light43" onchange="reverseLights(4, 3);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light44" onchange="reverseLights(4, 4);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light45" onchange="reverseLights(4, 5);">
+                    <span>光</span>
+                </label>
+                <br>
+                <br>
+                <label class="checktext">
+                    <input type="checkbox" id="light50" onchange="reverseLights(5, 0);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light51" onchange="reverseLights(5, 1);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light52" onchange="reverseLights(5, 2);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light53" onchange="reverseLights(5, 3);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light54" onchange="reverseLights(5, 4);">
+                    <span>光</span>
+                </label>
+                <label class="checktext">
+                    <input type="checkbox" id="light55" onchange="reverseLights(5, 5);">
+                    <span>光</span>
+                </label>
+                <p id="message">遊び方:クリックすると上下左右のも反転します。がんばって全部消そう</p>
+            </div>
+        </center>
+        <hr>
+        <h3>リンク集</h3>
+        <div class="paper">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>まんがタイムきららWeb</td>
+                        <td><a href="http://dokidokivisual.com">dokidokivisual.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Twitter</td>
+                        <td><a href="https://twitter.com/jp3lhw">@JP3LHW</a></td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td><a href="https://www.instagram.com/0.500l/">@0.500l</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
+
 </html>
