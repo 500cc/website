@@ -1,5 +1,5 @@
 let lights = new Array(6).fill(0).map(() => new Array(6).fill(0).map(() => Math.random() <= 0.5));
-window.onload = init;
+window.addEventListener("load", init);
 
 function init() {
     for (let i = 0; i < 6; i++) {
